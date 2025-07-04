@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <!-- override to remove oxygenlow heartbeat sound -->
+  <Override>
+    <heartbeatdiastole file="%ModDir%/Content/Sound/silent.ogg" />
+    <heartbeatdiastole file="%ModDir%/Content/Sound/silent.ogg" />
+    <heartbeatdiastole file="%ModDir%/Content/Sound/silent.ogg" />
+    <heartbeatsystole file="%ModDir%/Content/Sound/silent.ogg" />
+    <heartbeatsystole file="%ModDir%/Content/Sound/silent.ogg" />
+    <heartbeatsystole file="%ModDir%/Content/Sound/silent.ogg" />
+  </Override>
+</sounds>

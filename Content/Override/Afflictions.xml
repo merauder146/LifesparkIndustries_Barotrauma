@@ -361,10 +361,10 @@
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character" targetlimb="RightArm">
           <Conditional gypsumcast="eq 0" />
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" />
@@ -374,10 +374,10 @@
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character" targetlimb="LeftArm">
           <Conditional gypsumcast="eq 0" />
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" />
@@ -387,10 +387,10 @@
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" targetlimb="RightLeg">
           <Conditional gypsumcast="eq 0" />
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
           <Affliction identifier="severepain" amount="1" />
         </StatusEffect>
       </Effect>
@@ -401,10 +401,10 @@
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" targetlimb="LeftLeg">
           <Conditional gypsumcast="eq 0" />
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
           <Affliction identifier="severepain" amount="1" />
         </StatusEffect>
       </Effect>
@@ -414,10 +414,10 @@
     <Affliction name="" identifier="t_fracture" description="" healableinmedicalclinic="false" targets="human" limbspecific="false" indicatorlimb="Torso" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="90" maxstrength="100">
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" />
@@ -432,10 +432,10 @@
     <Affliction name="" identifier="n_fracture" description="" healableinmedicalclinic="false" targets="human" limbspecific="false" indicatorlimb="Head" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="90" maxstrength="100">
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" />
@@ -455,10 +455,10 @@
     <Affliction name="" identifier="h_fracture" description="" healableinmedicalclinic="false" targets="human" limbspecific="false" indicatorlimb="Head" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="90" maxstrength="100">
       <Effect minstrength="0" maxstrength="6">
         <StatusEffect target="Character">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" />
@@ -474,10 +474,10 @@
     <Affliction name="" identifier="dislocation1" description="" healableinmedicalclinic="true" basehealcost="80" targets="human" limbspecific="false" indicatorlimb="RightLeg" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="30" maxstrength="100">
       <Effect minstrength="0" maxstrength="6" strengthchange="10">
         <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
           <Affliction identifier="severepain" amount="1" />
         </StatusEffect>
       </Effect>
@@ -493,10 +493,10 @@
     <Affliction name="" identifier="dislocation2" description="" healableinmedicalclinic="true" basehealcost="80" targets="human" limbspecific="false" indicatorlimb="LeftLeg" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="30" maxstrength="100">
       <Effect minstrength="0" maxstrength="6" strengthchange="10">
         <StatusEffect target="Character">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
           <Affliction identifier="severepain" amount="1" />
         </StatusEffect>
       </Effect>
@@ -512,10 +512,10 @@
     <Affliction name="" identifier="dislocation3" description="" healableinmedicalclinic="true" basehealcost="80" targets="human" limbspecific="false" indicatorlimb="RightArm" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="30" maxstrength="100">
       <Effect minstrength="0" maxstrength="6" strengthchange="1.5">
         <StatusEffect target="Character">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" strengthchange="1.5" />
@@ -530,10 +530,10 @@
     <Affliction name="" identifier="dislocation4" description="" healableinmedicalclinic="true" basehealcost="80" targets="human" limbspecific="false" indicatorlimb="LeftArm" type="fractures" showinhealthscannerthreshold="5" showiconthreshold="30" maxstrength="100">
       <Effect minstrength="0" maxstrength="6" strengthchange="1.5">
         <StatusEffect target="Character">
-          <sound file="%ModDir%/Sound/bonebreak4.ogg" selectionmode="random" />
-          <sound file="%ModDir%/Sound/bonebreak3.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak2.ogg" />
-          <sound file="%ModDir%/Sound/bonebreak1.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak4.ogg" selectionmode="random" />
+          <sound file="%ModDir%/Content/Sound/bonebreak3.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak2.ogg" />
+          <sound file="%ModDir%/Content/Sound/bonebreak1.ogg" />
         </StatusEffect>
       </Effect>
       <Effect minstrength="6" maxstrength="100" strengthchange="1.5" />
@@ -1047,21 +1047,21 @@
           <Conditional ishuman="true" />
           <Conditional ismale="true" />
           <Conditional sym_cough="gte 1" />
-          <Sound file="%ModDir%/Sound/Voice/male_cough1.ogg" selectionmode="Random" />
-          <Sound file="%ModDir%/Sound/Voice/male_cough2.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/male_cough3.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/male_cough4.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_cough1.ogg" selectionmode="Random" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_cough2.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_cough3.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_cough4.ogg" />
         </StatusEffect>
         <StatusEffect target="Character" comparison="and">
           <Conditional ishuman="true" />
           <Conditional isfemale="true" />
           <Conditional sym_cough="gte 1" />
-          <Sound file="%ModDir%/Sound/Voice/female_cough1.ogg" selectionmode="Random" />
-          <Sound file="%ModDir%/Sound/Voice/female_cough2.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/female_cough3.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/female_cough4.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/female_cough5.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/female_cough6.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/female_cough1.ogg" selectionmode="Random" />
+          <Sound file="%ModDir%/Content/Sound/Voice/female_cough2.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/female_cough3.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/female_cough4.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/female_cough5.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/female_cough6.ogg" />
         </StatusEffect>
       </PeriodicEffect>
       <icon texture="%ModDir%/Content/Sprites/NT/AfflictionIcons.png" sheetindex="7,0" sheetelementsize="128,128" origin="0,0" />
@@ -1303,15 +1303,15 @@ thats what the vomiting symptom is for -->
       <Effect minstrength="0" maxstrength="2" strengthchange="-1000">
         <StatusEffect target="Character" comparison="and" disabledeltatime="true" stackable="false" duration="3" checkconditionalalways="false">
           <Conditional ishuman="true" ismale="true" analgesia="lte 0" anesthesia="lte 0" sym_unconsciousness="lte 0" />
-          <Sound file="%ModDir%/Sound/Voice/male_onfire1.ogg" selectionmode="Random" />
-          <Sound file="%ModDir%/Sound/Voice/male_onfire2.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/male_onfire3.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_onfire1.ogg" selectionmode="Random" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_onfire2.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/male_onfire3.ogg" />
         </StatusEffect>
         <StatusEffect target="Character" comparison="and" disabledeltatime="true" stackable="false" duration="3" checkconditionalalways="false">
           <Conditional ishuman="true" isfemale="true" analgesia="lte 0" anesthesia="lte 0" sym_unconsciousness="lte 0" />
-          <Sound file="%ModDir%/Sound/Voice/woman_agony1.ogg" selectionmode="Random" />
-          <Sound file="%ModDir%/Sound/Voice/woman_agony2.ogg" />
-          <Sound file="%ModDir%/Sound/Voice/woman_agony3.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/woman_agony1.ogg" selectionmode="Random" />
+          <Sound file="%ModDir%/Content/Sound/Voice/woman_agony2.ogg" />
+          <Sound file="%ModDir%/Content/Sound/Voice/woman_agony3.ogg" />
         </StatusEffect>
       </Effect>
       <icon texture="%ModDir%/Content/Sprites/NT/AfflictionIcons.png" sourcerect="256,0,128,128" color="68,157,198,255" origin="0,0" />
