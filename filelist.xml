@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="Lifespark Industries" modversion="0.1" corepackage="false" gameversion="1.9.8.0">
     <ServerExecutable file="%ModDir%/Lua/Scripts/lua4baro/Binary/DedicatedServer.exe" />
-    <Item file="%ModDir%/Content/Override/Afflictions.xml" />
 </contentpackage>
