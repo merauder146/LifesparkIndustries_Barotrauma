@@ -35,13 +35,13 @@
 		<Sprite texture="signalcomp.png" sourerect="971,1,34,21" depth="0.55" />
 		<Body width="32" height="20" density="30" />
 		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
+		<!--<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
 				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
 			</StatusEffect>
 			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
 			<StatusEffect type="OnBroken" target="This" Condition="" />
-		</Throwable>
+		</Throwable>-->
 	</Item>
 	</Override>
 
@@ -80,13 +80,13 @@
 		<Sprite texture="%ModDir%/Content/Sprites/Batteries/HighCapBattCell.png" sourerect="0,0,0,0" depth="0.55" />
 		<Body width="32" height="20" density="30" />
 		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
+		<!--<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
 				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
 			</StatusEffect>
 			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
 			<StatusEffect type="OnBroken" target="This" Condition="" />
-		</Throwable>
+		</Throwable>-->
 	</Item>
 	
 	<Item name="HCE Battery Cell" identifier="HCEBatteryCell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="A tier 3 standardized battery holding triple the stock amount." impactsoundtag="impact_metal_light">
@@ -124,13 +124,13 @@
 		<Sprite texture="%ModDir%/Content/Sprites/Batteries/HCEBattCell.png" sourerect="0,0,0,0" depth="0.55" />
 		<Body width="32" height="20" density="30" />
 		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
+		<!--<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
 				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
 			</StatusEffect>
 			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
 			<StatusEffect type="OnBroken" target="This" Condition="" />
-		</Throwable>
+		</Throwable>-->
 	</Item>
 	
 	<!--<Item name="Prototype Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
