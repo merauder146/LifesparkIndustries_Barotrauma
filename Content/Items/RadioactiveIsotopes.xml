@@ -1,224 +1,220 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-		<Item name="Uranium-232 Ore" identifier="U232ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer primary="storagecab" />
-		<Price baseprice="50" sold="false">
-			<Price storeidentifier="merchantoutpost" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.1" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.1" />
-			<Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
-			<Price storeidentifier="merchantarmory" />
-		</Price>
-		<InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-232.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,0,0" depth="0.55" origin="0.5,0.5" />
-		<Body radius="40" width="20" density="25" />
-		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<!-- Remove the item when fully used -->
-			<StatusEffect type="OnBroken" target="This">
-			<Remove />
-			</StatusEffect>
-		</Holdable>
-		<!-- for scrap cannon -->
-		<Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-				<Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
-					<Affliction identifier="lacerations" strength="8" />
-					<Affliction identifier="bleeding" strength="6" />
-					<Affliction identifier="stun" strength="0.3" />
-					<Affliction identifier="radiationsickness" strength="5" />
-				</Attack>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-				</StatusEffect>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<Conditional entitytype="eq Structure" />
-					<Conditional hastag="eq door" />
-					<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-				</StatusEffect>
-			</Projectile>
-		</Item>
-		
-		<Item name="Uranium-233 Ore" identifier="U233ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer primary="storagecab" />
-		<Price baseprice="50" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="1.3" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.1" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.1" />
-			<Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
-			<Price storeidentifier="merchantarmory" />
-		</Price>
-		<Fabricate suitablefabricators="DecayGenerator" requiredtime="60">
-<!--			<RequiredSkill identifier="nuclear" level="" />	-->
-			<RequiredItem identifier="Pa233ore" />
-		</Fabricate>
-		<Fabricate suitablefabricators="BreederReactor" displayname="Slow Breed" requiredtime="1800" amount="2.4">
-<!--			<RequiredSkill identifier="nuclear" level="" />	-->
-			<RequiredItem identifier="Th232ore" />
-		</Fabricate>
-		<Fabricate suitablefabricators="BreederReactor" displayname="Fast Breed" requiredtime="1200" amount="1.4">
-<!--			<RequiredSkill identifier="nuclear" level="" />	-->
-			<RequiredItem identifier="Th232ore" />
-		</Fabricate>
-		<InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-233.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,0,0" depth="0.55" origin="0.5,0.5" />
-		<Body radius="40" width="20" density="25" />
-		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<!-- Remove the item when fully used -->
-			<StatusEffect type="OnBroken" target="This">
-			<Remove />
-			</StatusEffect>
-		</Holdable>
-		<!-- for scrap cannon -->
-		<Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-				<Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
-					<Affliction identifier="lacerations" strength="8" />
-					<Affliction identifier="bleeding" strength="6" />
-					<Affliction identifier="stun" strength="0.3" />
-					<Affliction identifier="radiationsickness" strength="5" />
-				</Attack>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-				</StatusEffect>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<Conditional entitytype="eq Structure" />
-					<Conditional hastag="eq door" />
-					<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-				</StatusEffect>
-			</Projectile>
-		</Item>
-		
-	<Override>
-		<Item name="Uranium-234 Ore" identifier="uranium" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer primary="storagecab" />
-		<Price baseprice="50" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="1.3" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.1" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.1" />
-			<Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
-			<Price storeidentifier="merchantarmory" />
-		</Price>
-		<Fabricate suitablefabricators="DecayGenerator" requiredtime="60">
-<!--			<RequiredSkill identifier="nuclear" level="" />	-->
-			<RequiredItem identifier="Pa234ore" />
-		</Fabricate>
-		<InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-234.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,0,0" depth="0.55" origin="0.5,0.5" />
-		<Body radius="40" width="20" density="25" />
-		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<!-- Remove the item when fully used -->
-			<StatusEffect type="OnBroken" target="This">
-			<Remove />
-			</StatusEffect>
-		</Holdable>
-		<!-- for scrap cannon -->
-		<Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-				<Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
-					<Affliction identifier="lacerations" strength="8" />
-					<Affliction identifier="bleeding" strength="6" />
-					<Affliction identifier="stun" strength="0.3" />
-					<Affliction identifier="radiationsickness" strength="5" />
-				</Attack>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-				</StatusEffect>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<Conditional entitytype="eq Structure" />
-					<Conditional hastag="eq door" />
-					<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-				</StatusEffect>
-			</Projectile>
-		</Item>
-	</Override>
-	
-		<Item name="Uranium-235 Ore" identifier="U235ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer primary="storagecab" />
-		<Price baseprice="50" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="1.3" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.1" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.1" />
-			<Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
-			<Price storeidentifier="merchantarmory" />
-		</Price>
-		<Fabricate suitablefabricators="DecayGenerator" requiredtime="60">
-<!--			<RequiredSkill identifier="nuclear" level="" />	-->
-			<RequiredItem identifier="Pu239ore" />
-		</Fabricate>
-		<InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-235.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,0,0" depth="0.55" origin="0.5,0.5" />
-		<Body radius="40" width="20" density="25" />
-		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<!-- Remove the item when fully used -->
-			<StatusEffect type="OnBroken" target="This">
-			<Remove />
-			</StatusEffect>
-		</Holdable>
-		<!-- for scrap cannon -->
-		<Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-				<Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
-					<Affliction identifier="lacerations" strength="8" />
-					<Affliction identifier="bleeding" strength="6" />
-					<Affliction identifier="stun" strength="0.3" />
-					<Affliction identifier="radiationsickness" strength="5" />
-				</Attack>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-				</StatusEffect>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<Conditional entitytype="eq Structure" />
-					<Conditional hastag="eq door" />
-					<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-				</StatusEffect>
-			</Projectile>
-		</Item>
-		
-		<Item name="Uranium-238 Ore" identifier="U238ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-		<PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer primary="storagecab" />
-		<Price baseprice="50" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="1.3" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.1" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.1" />
-			<Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
-			<Price storeidentifier="merchantarmory" />
-		</Price>
-		<InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-238.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopPlaceholder.png" sourcerect="0,0,0,0" depth="0.55" origin="0.5,0.5" />
-		<Body radius="40" width="20" density="25" />
-		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-			<!-- Remove the item when fully used -->
-			<StatusEffect type="OnBroken" target="This">
-			<Remove />
-			</StatusEffect>
-		</Holdable>
-		<!-- for scrap cannon -->
-		<Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
-				<Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
-					<Affliction identifier="lacerations" strength="8" />
-					<Affliction identifier="bleeding" strength="6" />
-					<Affliction identifier="stun" strength="0.3" />
-					<Affliction identifier="radiationsickness" strength="5" />
-				</Attack>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-				</StatusEffect>
-				<StatusEffect type="OnImpact" target="UseTarget">
-					<Conditional entitytype="eq Structure" />
-					<Conditional hastag="eq door" />
-					<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-				</StatusEffect>
-			</Projectile>
-		</Item>
+  <Item name="Uranium-232 Ore" identifier="U232ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="50" sold="false">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
+      <Price storeidentifier="merchantarmory" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-232.png" sourcerect="0,0,65,65" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,48,40" depth="0.55" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <!-- for scrap cannon -->
+    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="radiationsickness" strength="5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Uranium-233 Ore" identifier="U233ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="50" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
+      <Price storeidentifier="merchantarmory" />
+    </Price>
+    <Fabricate suitablefabricators="DecayGenerator" requiredtime="60">
+      <!--			<RequiredSkill identifier="nuclear" level="" />	-->
+      <RequiredItem identifier="Pa233ore" />
+    </Fabricate>
+    <Fabricate suitablefabricators="BreederReactor" displayname="Slow Breed" requiredtime="1800" amount="2.4">
+      <!--			<RequiredSkill identifier="nuclear" level="" />	-->
+      <RequiredItem identifier="Th232ore" />
+    </Fabricate>
+    <Fabricate suitablefabricators="BreederReactor" displayname="Fast Breed" requiredtime="1200" amount="1.4">
+      <!--			<RequiredSkill identifier="nuclear" level="" />	-->
+      <RequiredItem identifier="Th232ore" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-233.png" sourcerect="0,0,65,65" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,48,40" depth="0.55" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <!-- for scrap cannon -->
+    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="radiationsickness" strength="5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Override>
+    <Item name="Uranium-234 Ore" identifier="uranium" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+      <PreferredContainer primary="storagecab" />
+      <Price baseprice="50" sold="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" />
+        <Price storeidentifier="merchantresearch" multiplier="1.1" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+        <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
+        <Price storeidentifier="merchantarmory" />
+      </Price>
+      <Fabricate suitablefabricators="DecayGenerator" requiredtime="60">
+        <!--			<RequiredSkill identifier="nuclear" level="" />	-->
+        <RequiredItem identifier="Pa234ore" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-234.png" sourcerect="0,0,65,65" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,48,40" depth="0.55" origin="0.5,0.5" />
+      <Body radius="40" width="20" density="25" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <!-- for scrap cannon -->
+      <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
+        <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+        <Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
+          <Affliction identifier="lacerations" strength="8" />
+          <Affliction identifier="bleeding" strength="6" />
+          <Affliction identifier="stun" strength="0.3" />
+          <Affliction identifier="radiationsickness" strength="5" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        </StatusEffect>
+        <StatusEffect type="OnImpact" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Projectile>
+    </Item>
+  </Override>
+  <Item name="Uranium-235 Ore" identifier="U235ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="50" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
+      <Price storeidentifier="merchantarmory" />
+    </Price>
+    <Fabricate suitablefabricators="DecayGenerator" requiredtime="60">
+      <!--			<RequiredSkill identifier="nuclear" level="" />	-->
+      <RequiredItem identifier="Pu239ore" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-235.png" sourcerect="0,0,65,65" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,48,40" depth="0.55" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <!-- for scrap cannon -->
+    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="radiationsickness" strength="5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Uranium-238 Ore" identifier="U238ore" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="reactorfuel,smallitem,advmunition_core,scrapcannonammo" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="50" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="5" />
+      <Price storeidentifier="merchantarmory" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/U-238.png" sourcerect="0,0,65,65" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Sprites/RadioactiveIsotopes/IsotopePlaceholder.png" sourcerect="0,0,48,40" depth="0.55" origin="0.5,0.5" />
+    <Body radius="40" width="20" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <!-- for scrap cannon -->
+    <Projectile characterusable="false" hitscan="true" hitscancount="16" removeonhit="true" spread="25">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="1" targetforce="4" itemdamage="1" severlimbsprobability="0.15" penetration="0.2">
+        <Affliction identifier="lacerations" strength="8" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="radiationsickness" strength="5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
 </Items>

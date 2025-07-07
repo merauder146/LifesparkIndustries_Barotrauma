@@ -1,140 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-	<Override>
-	<Item name="Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="batterycellrecharger" maxcondition="80" />
-		<PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="1.0" mincondition="25" />
-		<PreferredContainer secondary="divingcab" amount="3" spawnprobability="1" notcampaign="true" />
-		<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="1" maxamount="2" spawnprobability="0.1" />
-		<PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.1" />
-		<Price baseprice="125" minavailable="7">
-			<Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="5" />
-			<Price storeidentifier="merchantcity" minavailable="4" />
-			<Price storeidentifier="merchantresearch" multiplier="1.2" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.1" />
-			<Price storeidentifier="merchantmine" minavailable="6" />
-			<Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="6" />
-			<Price storeidentifier="merchantarmory" multiplier="0.8" />
-		</Price>
-		<Deconstruct time="10">
-			<Item identifier="zinc" />
-			<Item identifier="lithium" />
-		</Deconstruct>
-		<Fabricate suitablefabricators="fabricator" requiredtime="10">
-			<RequiredSkill identifier="electrical" level="25" />
-			<RequiredItem identifier="zinc" amount="2" />
-			<RequiredItem identifier="lithium" amount="1" />
-		</Fabricate>
-		<Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="210" fabricationlimitmin="0" fabricationlimitmax="3" quality="0" />
-		<Quality>
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="signalcomp.png" sourerect="971,1,34,21" depth="0.55" />
-		<Body width="32" height="20" density="30" />
-		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
-			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
-				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
-			</StatusEffect>
-			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
-			<StatusEffect type="OnBroken" target="This" Condition="" />
-		</Throwable>
-	</Item>
-	</Override>
+  <Override>
+    <Item name="Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="batterycellrecharger" maxcondition="80" />
+      <PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="1.0" mincondition="25" />
+      <PreferredContainer secondary="divingcab" amount="3" spawnprobability="1" notcampaign="true" />
+      <PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+      <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+      <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.1" />
+      <Price baseprice="125" minavailable="7">
+        <Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="5" />
+        <Price storeidentifier="merchantcity" minavailable="4" />
+        <Price storeidentifier="merchantresearch" multiplier="1.2" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+        <Price storeidentifier="merchantmine" minavailable="6" />
+        <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="6" />
+        <Price storeidentifier="merchantarmory" multiplier="0.8" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="zinc" />
+        <Item identifier="lithium" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="electrical" level="25" />
+        <RequiredItem identifier="zinc" amount="2" />
+        <RequiredItem identifier="lithium" amount="1" />
+      </Fabricate>
+      <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="210" fabricationlimitmin="0" fabricationlimitmax="3" quality="0" />
+	  <Quality>
+        <QualityStat stattype="Condition" value="0.1" />
+      </Quality>
+      <InventoryIcon texture="%ModDir%/Content/Sprites/Batteries/batteryBase.png" sourcerect="0,0,47,31" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/Content/Sprites/Batteries/batteryBase.png" sourcerect="0,0,47,31" depth="0.55" origin="0.5,0.5" />
+      <Body width="32" height="20" density="30" />
+      <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" />
 
-	<Item name="High Capacity Battery Cell" identifier="HCBatteryCell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="A tier 2 standardized battery holding twice the stock amount." impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="batterycellrecharger" maxcondition="80" />
-		<PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="0.5" mincondition="10" />
-		<PreferredContainer secondary="divingcab" amount="2" spawnprobability="0.6" notcampaign="true" />
-		<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="0" maxamount="2" spawnprobability="0.05" />
-		<PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
-		<!--<PreferredContainer secondary="outposttrashcan" amount="0" spawnprobability="0.0" />-->
-		<Price baseprice="250">
-			<Price storeidentifier="merchantoutpost" multiplier="0.5" maxavailable="1" />
-			<Price storeidentifier="merchantcity" maxavailable="2" />
-			<Price storeidentifier="merchantresearch" multiplier="0.8" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.2" />
-			<Price storeidentifier="merchantmine" maxavailable="3" />
-			<Price storeidentifier="merchantengineering" multiplier="0.4" maxavailable="3" />
-			<Price storeidentifier="merchantarmory" multiplier="0.3" />
-		</Price>
-		<Deconstruct time="20">
-			<Item identifier="batterycell" amount="1" />
-			<Item identifier="lithium" amount="1" />
-			<Item identifier="zinc" amount="1" />
-		</Deconstruct>
-		<Fabricate suitablefabricators="fabricator" requiredtime="20">
-			<RequiredSkill identifier="electrical" level="30" />
-			<RequiredItem identifier="batterycell" amount="2" />
-			<RequiredItem identifier="zinc" amount="1" />
-			<RequiredItem identifier="lithium" amount="1" />
-		</Fabricate>
-		<Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="350" fabricationlimitmin="0" fabricationlimitmax="2" quality="0" />
-		<Quality>
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-		<InventoryIcon texture="%ModDir%/Content/Batteries/HighCapBattCell.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/Batteries/HighCapBattCell.png" sourerect="0,0,0,0" depth="0.55" />
-		<Body width="32" height="20" density="30" />
-		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
+      <!--<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
 				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
 			</StatusEffect>
 			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
 			<StatusEffect type="OnBroken" target="This" Condition="" />
-		</Throwable>
-	</Item>
-	
-	<Item name="HCE Battery Cell" identifier="HCEBatteryCell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="A tier 3 standardized battery holding triple the stock amount." impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="batterycellrecharger" maxcondition="80" />
-		<PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="0.1" mincondition="0.1" />
-		<PreferredContainer secondary="divingcab" amount="1" spawnprobability="0.1" notcampaign="true" />
-		<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="0" maxamount="1" spawnprobability="0.03" />
-		<PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.01" />
-		<!--<PreferredContainer secondary="" amount="" spawnprobability="" />-->
-		<Price baseprice="500">
-			<Price storeidentifier="merchantoutpost" sold="false" />
-			<Price storeidentifier="merchantcity" maxavailable="1" />
-			<Price storeidentifier="merchantresearch" multiplier="0.4" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.01" />
-			<Price storeidentifier="merchantmine" maxavailable="1" />
-			<Price storeidentifier="merchantengineering" multiplier="0.2" maxavailable="1" />
-			<Price storeidentifier="merchantarmory" sold="false" />
-		</Price>
-		<Deconstruct time="30">
-			<Item identifier="HCBatteryCell" amount="1" />
-			<Item identifier="lithium" amount="2" />
-			<Item identifier="zinc" amount="2" />
-		</Deconstruct>
-		<Fabricate suitablefabricators="fabricator" requiredtime="30">
-			<RequiredSkill identifier="electrical" level="35" />
-			<RequiredItem identifier="HCBatteryCell" amount="3" />
-			<RequiredItem identifier="zinc" amount="2" />
-			<RequiredItem identifier="lithium" amount="2" />
-		</Fabricate>
-		<Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="615" fabricationlimitmin="0" fabricationlimitmax="1" quality="0" />
-		<Quality>
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-		<InventoryIcon texture="%ModDir%/Content/Sprites/Batteries/HCEBattCell.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Content/Sprites/Batteries/HCEBattCell.png" sourerect="0,0,0,0" depth="0.55" />
-		<Body width="32" height="20" density="30" />
-		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
+		</Throwable>-->
+    </Item>
+  </Override>
+  <Item name="High Capacity Battery Cell" identifier="HCBatteryCell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="A tier 2 standardized battery holding twice the stock amount." impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="batterycellrecharger" maxcondition="80" />
+    <PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="0.5" mincondition="10" />
+    <PreferredContainer secondary="divingcab" amount="2" spawnprobability="0.6" notcampaign="true" />
+    <PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="0" maxamount="2" spawnprobability="0.05" />
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.03" />
+    <!--<PreferredContainer secondary="outposttrashcan" amount="0" spawnprobability="0.0" />-->
+    <Price baseprice="250">
+      <Price storeidentifier="merchantoutpost" multiplier="0.5" maxavailable="1" />
+      <Price storeidentifier="merchantcity" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="0.8" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.2" />
+      <Price storeidentifier="merchantmine" maxavailable="3" />
+      <Price storeidentifier="merchantengineering" multiplier="0.4" maxavailable="3" />
+      <Price storeidentifier="merchantarmory" multiplier="0.3" />
+    </Price>
+    <Deconstruct time="20">
+      <Item identifier="batterycell" amount="1" />
+      <Item identifier="lithium" amount="1" />
+      <Item identifier="zinc" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="batterycell" amount="2" />
+      <RequiredItem identifier="zinc" amount="1" />
+      <RequiredItem identifier="lithium" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="350" fabricationlimitmin="0" fabricationlimitmax="2" quality="0" />
+    <Quality>
+      <QualityStat stattype="Condition" value="0.1" />
+    </Quality>
+    <InventoryIcon texture="%ModDir%/Content/Sprites/Batteries/HighCapBattCell.png" sourcerect="0,0,47,31" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Sprites/Batteries/HighCapBattCell.png" sourcerect="0,0,47,31" depth="0.55" origin="0.5,0.5" />
+    <Body width="32" height="20" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
+    <!--<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
 				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
 			</StatusEffect>
 			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
 			<StatusEffect type="OnBroken" target="This" Condition="" />
-		</Throwable>
-	</Item>
-	
-	<!--<Item name="Prototype Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="" maxcondition="" />
+		</Throwable>-->
+  </Item>
+  <Item name="HCE Battery Cell" identifier="HCEBatteryCell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="A tier 3 standardized battery holding triple the stock amount." impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="batterycellrecharger" maxcondition="80" />
+    <PreferredContainer primary="stunbaton,underwaterscooter,handheldsonar,sonarbeacon,flashlight,portablepump,poweredcontainer" spawnprobability="0.1" mincondition="0.1" />
+    <PreferredContainer secondary="divingcab" amount="1" spawnprobability="0.1" notcampaign="true" />
+    <PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab,outpostengcab" minamount="0" maxamount="1" spawnprobability="0.03" />
+    <PreferredContainer secondary="abandonedstoragecab,piratestoragecab,wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.01" />
+    <!--<PreferredContainer secondary="" amount="" spawnprobability="" />-->
+    <Price baseprice="500">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" maxavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="0.4" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.01" />
+      <Price storeidentifier="merchantmine" maxavailable="1" />
+      <Price storeidentifier="merchantengineering" multiplier="0.2" maxavailable="1" />
+      <Price storeidentifier="merchantarmory" sold="false" />
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="HCBatteryCell" amount="1" />
+      <Item identifier="lithium" amount="2" />
+      <Item identifier="zinc" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="electrical" level="35" />
+      <RequiredItem identifier="HCBatteryCell" amount="3" />
+      <RequiredItem identifier="zinc" amount="2" />
+      <RequiredItem identifier="lithium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="615" fabricationlimitmin="0" fabricationlimitmax="1" quality="0" />
+    <Quality>
+      <QualityStat stattype="Condition" value="0.1" />
+    </Quality>
+    <InventoryIcon texture="%ModDir%/Content/Sprites/Batteries/HCEBattCell.png" sourcerect="0,0,47,31" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Content/Sprites/Batteries/HCEBattCell.png" sourcerect="0,0,47,31" depth="0.55" origin="0.5,0.5" />
+    <Body width="32" height="20" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
+    <!--<Throwable slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0.5" throwforce="2.0" msg="ItemMsgPickUpSelect">
+			<StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true">
+				<Explosion range="0.5" ballastfloradamage="" structuredamage="" itemdamage="" force="" severlimbprobability="" camerashake="" smoke="" flames="" flash="" sparks="" underwaterbubble="" playtinnitus="" applyfireeffects="" />
+			</StatusEffect>
+			<StatusEffect type="OnFire" target="This" Condition="" interval="" disabledeltatime="" />
+			<StatusEffect type="OnBroken" target="This" Condition="" />
+		</Throwable>-->
+  </Item>
+  <!--<Item name="Prototype Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="" maxcondition="" />
 		<PreferredContainer primary="" spawnprobability="" mincondition="" />
 		<PreferredContainer secondary="" amount="" spawnprobability="" notcampaign="" />
 		<PreferredContainer secondary="" minamount="" maxamount="" spawnprobability="" />
@@ -174,9 +171,8 @@
 			<StatusEffect type="OnBroken" target="This" Condition="" />
 		</Throwable>
 	</Item>-->
-	
-	<!--<Item name="High Capacity Fulgurium Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="" maxcondition="" />
+  <!--<Item name="High Capacity Fulgurium Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="" maxcondition="" />
 		<PreferredContainer primary="" spawnprobability="" mincondition="" />
 		<PreferredContainer secondary="" amount="" spawnprobability="" notcampaign="" />
 		<PreferredContainer secondary="" minamount="" maxamount="" spawnprobability="" />
@@ -209,9 +205,8 @@
 		<Body width="32" height="20" density="30" />
 		<Holdable slots="Any,RightHand,LeftHand" msf="ItemMsgPickUpSelect" />
 	</Item>-->
-	
-	<!--<Item name="HCE Fulgurium Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="" maxcondition="" />
+  <!--<Item name="HCE Fulgurium Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="" maxcondition="" />
 		<PreferredContainer primary="" spawnprobability="" mincondition="" />
 		<PreferredContainer secondary="" amount="" spawnprobability="" notcampaign="" />
 		<PreferredContainer secondary="" minamount="" maxamount="" spawnprobability="" />
@@ -251,9 +246,8 @@
 			<StatusEffect type="OnBroken" target="This" Condition="" />
 		</Throwable>
 	</Item>-->
-	
-	<!--<Item name="Prototype Fulgurium Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
-		<PreferredContainer priamry="" maxcondition="" />
+  <!--<Item name="Prototype Fulgurium Battery Cell" identifier="batterycell" category="Equipment,Electrical" maxstacksize="8" tags="smallitem,loadable,mobilebattery" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="" maxcondition="" />
 		<PreferredContainer primary="" spawnprobability="" mincondition="" />
 		<PreferredContainer secondary="" amount="" spawnprobability="" notcampaign="" />
 		<PreferredContainer secondary="" minamount="" maxamount="" spawnprobability="" />
@@ -293,5 +287,4 @@
 			<StatusEffect type="OnBroken" target="This" Condition="" />
 		</Throwable>
 	</Item>-->
-
 </Items>

@@ -133,4 +133,7 @@
     <Other file="%ModDir%/Content/Sound/silent.ogg" />
     <Character file="%ModDir%/Content/NTCharacters/Human/Human.xml" />
     <Other file="%ModDir%/Content/NTCharacters/Human/Ragdolls/HumanDefaultRagdoll.xml" />
+    <Item file="%ModDir%/Content/Items/Batteries.xml" />
+    <!--<Item file="%ModDir%/Content/Items/FuelRods.xml" />-->
+    <Item file="%ModDir%/Content/Items/RadioactiveIsotopes.xml" />
 </contentpackage>
