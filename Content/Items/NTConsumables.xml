@@ -13,7 +13,7 @@
     <Price baseprice="30">
       <Price storeidentifier="merchantmedical" sold="true" multiplier="0.9" minavailable="25" />
     </Price>
-    <InventoryIcon texture="%ModDir%/Content/Sprites/NT/NT//InventoryItemIconAtlas.png" sourcerect="320,0,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Content/Sprites/NT/InventoryItemIconAtlas.png" sourcerect="320,0,64,64" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Content/Sprites/NT/InGameItemIconAtlas.png" sourcerect="256,128,128,128" depth="0.55" origin="0.5,0.5" />
     <Body width="65" height="45" density="50" />
     <SuitableTreatment identifier="lacerations" suitability="20" />
