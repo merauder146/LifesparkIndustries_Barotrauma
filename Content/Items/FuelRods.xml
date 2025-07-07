@@ -7,7 +7,7 @@
     	<PreferredContainer secondary="wreckreactorcab,abandonedreactorcab,piratereactorcab" minamount="1" maxamount="2" spawnprobability="0.5" />
     	<PreferredContainer secondary="beaconengcab" amount="1" spawnprobability="0.2" />
     	<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab" amount="1" spawnprobability="0.05" />
-    	<Price baseprice="" displaynonempty="true" minavailable="">
+    	<Price baseprice="150" sold="false">
     		<Price storeidentifier="merchantoutpost" />
     		<Price storeidentifier="merchantcity" minavailable="" />
 			<Price storeidentifier="merchantresearch" />
@@ -57,7 +57,7 @@
     	<PreferredContainer secondary="wreckreactorcab,abandonedreactorcab,piratereactorcab" minamount="1" maxamount="2" spawnprobability="0.5" />
     	<PreferredContainer secondary="beaconengcab" amount="1" spawnprobability="0.2" />
     	<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab" amount="1" spawnprobability="0.05" />
-    	<Price baseprice="" displaynonempty="true" minavailable="">
+    	<Price baseprice="150" sold="false">
     		<Price storeidentifier="merchantoutpost" />
     		<Price storeidentifier="merchantcity" minavailable="" />
 			<Price storeidentifier="merchantresearch" />
@@ -160,7 +160,7 @@
     	<PreferredContainer secondary="wreckreactorcab,abandonedreactorcab,piratereactorcab" minamount="1" maxamount="2" spawnprobability="0.5" />
     	<PreferredContainer secondary="beaconengcab" amount="1" spawnprobability="0.2" />
     	<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab" amount="1" spawnprobability="0.05" />
-    	<Price baseprice="" displaynonempty="true" minavailable="">
+    	<Price baseprice="150" sold="false">
     		<Price storeidentifier="merchantoutpost" />
     		<Price storeidentifier="merchantcity" minavailable="" />
 			<Price storeidentifier="merchantresearch" />
@@ -210,7 +210,7 @@
     	<PreferredContainer secondary="wreckreactorcab,abandonedreactorcab,piratereactorcab" minamount="1" maxamount="2" spawnprobability="0.5" />
     	<PreferredContainer secondary="beaconengcab" amount="1" spawnprobability="0.2" />
     	<PreferredContainer secondary="abandonedengcab,pirateengcab,wreckengcab" amount="1" spawnprobability="0.05" />
-    	<Price baseprice="" displaynonempty="true" minavailable="">
+    	<Price baseprice="150" sold="false">
     		<Price storeidentifier="merchantoutpost" />
     		<Price storeidentifier="merchantcity" minavailable="" />
 			<Price storeidentifier="merchantresearch" />
