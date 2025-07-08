@@ -210,10 +210,14 @@ NT.ConfigData = {
 		type = "bool",
 		description = "Prevents bots from attempting to treat afflictions.\nThis is desireable, because bots suck at treating things, and their bad attempts lag out the game immensely.",
 	},
-	NT_screams = { name = "Screams", default = true, type = "bool", description = "Characters scream when in pain." },
+	NT_screams = { 
+		name = "Screams", 
+		default = true, type = "bool", 
+		description = "Characters scream when in pain." 
+	},
 	NT_ignoreModConflicts = {
 		name = "Ignore mod conflicts",
-		default = false,
+		default = true,
 		type = "bool",
 		description = "Prevent the mod conflict affliction from showing up.",
 	},
