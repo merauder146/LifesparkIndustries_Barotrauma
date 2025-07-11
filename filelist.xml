@@ -139,4 +139,5 @@
     <Item file="%ModDir%/Content/Machines/NuclearFabricator.xml" />
     <!--Fuck you --> <!-- and the horse you rode in on-->
     <!-- new line test for visual code internal commit-->
+    <!-- just to show you-->
 </contentpackage>
