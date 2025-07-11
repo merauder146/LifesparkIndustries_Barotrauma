@@ -137,6 +137,4 @@
     <Item file="%ModDir%/Content/Items/FuelRods.xml" />
     <Item file="%ModDir%/Content/Items/RadioactiveIsotopes.xml" />
     <Item file="%ModDir%/Content/Machines/NuclearFabricator.xml" />
-    <!--Fuck you --> <!-- and the horse you rode in on-->
-    <!-- new line test for visual code internal commit-->
 </contentpackage>
