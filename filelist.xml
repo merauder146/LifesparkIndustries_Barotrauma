@@ -137,4 +137,5 @@
     <Item file="%ModDir%/Content/Items/FuelRods.xml" />
     <Item file="%ModDir%/Content/Items/RadioactiveIsotopes.xml" />
     <Item file="%ModDir%/Content/Machines/NuclearFabricator.xml" />
+    <!--Fuck you -->
 </contentpackage>
